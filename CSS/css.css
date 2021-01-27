@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  background-color: #fcf5ee;
+}
+#logo {
+  margin: 0 auto;
+  display: block;
+  height: 350px;
+  margin-bottom: -50px;
+}
+nav {
+  width: 100%;
+  background-color: #fae9d9;
+  padding: 20px;
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+}
