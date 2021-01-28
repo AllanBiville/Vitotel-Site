@@ -21,6 +21,57 @@ nav {
 nav a {
   padding: 10px;
   text-decoration: none;
+  color: black;
+  font-size: 150%;
 }
 nav a:hover {
+}
+footer {
+  text-align: center;
+  background-color: #fad7b7;
+}
+ul {
+  display: table;
+  width: 1000px;
+  -webkit-animation: slideAnim 20s ease 0s infinite;
+  -moz-animation: slideAnim 20s ease 0s infinite;
+  -ms-animation: slideAnim 20s ease 0s infinite;
+  -o-animation: slideAnim 20s ease 0s infinite;
+  animation: slideAnim 20s ease 0s infinite;
+}
+
+ul li {
+  display: table-cell;
+  width: 300px;
+}
+
+@keyframes slideAnim {
+  from,
+  11%,
+  to {
+    margin-left: -300px;
+  }
+  15%,
+  26% {
+    margin-left: -600px;
+  }
+  30%,
+  41% {
+    margin-left: -900px;
+  }
+  45%,
+  56% {
+    margin-left: -1200px;
+  }
+  65%,
+  76% {
+    margin-left: -1500px;
+  }
+  80%,
+  91% {
+    margin-left: -1800px;
+  }
+  99.99% {
+    margin-left: -2100px;
+  }
 }
