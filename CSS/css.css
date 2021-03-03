@@ -15,63 +15,99 @@ body {
 nav {
   width: 100%;
   background-color: #fce6d1;
-  padding: 20px;
   text-align: center;
 }
 nav a {
-  padding: 10px;
+  padding: 20px 10px;
   text-decoration: none;
-  color: black;
+  color: #605758;
+  font-weight: bolder;
   font-size: 150%;
+  display: inline-block;
 }
 nav a:hover {
+  color: black;
 }
-footer {
+
+/* Accueil (Actualités) */
+.actu {
+  display: block;
+  margin: 0 auto 40px;
   text-align: center;
+  background-color: white;
+  box-shadow: 10px 5px 4px black;
+  width: 90%;
+  min-width: 250px;
+}
+.actu h1 {
+  color: black;
+  font-weight: bolder;
+}
+.actu h3 {
+  color: #605758;
+}
+
+/* Accueil (Diaporama) */
+.conteneur1 {
+  overflow: hidden;
+  width: 100%;
+}
+.d1 {
+  width: 4000px;
+  height: 500px;
+  background-color: #ededed;
+  background-image: url("../images/diaporama.png");
+  background-size: contain;
+  animation: defilement1 12s linear infinite;
+}
+@keyframes defilement1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-2880px, 0);
+  }
+}
+/* Accueil (Présentation Association) */
+#accueil {
+  margin-left: 10px;
+}
+
+.adh a:visited {
+  color: green;
+}
+
+.adh a:hover {
+  color: burlywood;
+}
+
+#accueil h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+#accueil p {
+  font-weight: bold;
+}
+
+.adh {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Histoire Vitotel */
+#histoire h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#histoire h4 {
+  text-align: center;
+}
+
+/* Footer (Bas-De-Page) */
+footer {
   background-color: #fad7b7;
-}
-ul {
-  display: table;
-  width: 1000px;
-  -webkit-animation: slideAnim 20s ease 0s infinite;
-  -moz-animation: slideAnim 20s ease 0s infinite;
-  -ms-animation: slideAnim 20s ease 0s infinite;
-  -o-animation: slideAnim 20s ease 0s infinite;
-  animation: slideAnim 20s ease 0s infinite;
-}
-
-ul li {
-  display: table-cell;
-  width: 300px;
-}
-
-@keyframes slideAnim {
-  from,
-  11%,
-  to {
-    margin-left: -300px;
-  }
-  15%,
-  26% {
-    margin-left: -600px;
-  }
-  30%,
-  41% {
-    margin-left: -900px;
-  }
-  45%,
-  56% {
-    margin-left: -1200px;
-  }
-  65%,
-  76% {
-    margin-left: -1500px;
-  }
-  80%,
-  91% {
-    margin-left: -1800px;
-  }
-  99.99% {
-    margin-left: -2100px;
-  }
+  margin-bottom: -20px;
+  padding: 10px 0;
+  text-align: center;
 }
