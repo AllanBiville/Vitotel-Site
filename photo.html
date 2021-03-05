@@ -23,12 +23,67 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-   
+    <section id="photo">
+  <h1> 
+Saint Michel de Vitotel<br/>
+Commune de Vitot (27)
+  </h1>
+  <button class="accordion">Intérieur de Vitotel</button>
+  <div class="panel">
+<img src="images/IntVitotel (1).jpg"/>
+<img src="images/IntVitotel (2).jpg"/>
+<img src="images/IntVitotel (3).jpg"/>
+<img src="images/IntVitotel (4).jpg"/>
+<img src="images/IntVitotel (5).jpg"/>
+<img src="images/IntVitotel (6).jpg"/>
+<img src="images/IntVitotel (7).jpg"/>
+<img src="images/IntVitotel (8).jpg"/>
+<img src="images/IntVitotel (9).jpg"/>
+<img src="images/IntVitotel (10).jpg"/>
+<img src="images/IntVitotel (11).jpg"/>
+<img src="images/IntVitotel (12).JPG"/>
+<img src="images/IntVitotel (13).JPG"/>
+<img src="images/IntVitotel (14).JPG"/>
+<img src="images/IntVitotel (15).jpg"/>
+<img src="images/IntVitotel (16).jpg"/>
+<img src="images/IntVitotel (17).jpg"/>
+<img src="images/IntVitotel (18).jpg"/>
+<img src="images/IntVitotel (19).jpg"/>
+<img src="images/IntVitotel (20).jpg"/>
+<img src="images/IntVitotel (21).jpg"/>
+<img src="images/IntVitotel (22).jpg"/>
+<img src="images/IntVitotel (23).jpg"/>
+<img src="images/IntVitotel (24).jpg"/>
+  </div>
+  <button class="accordion">Extérieur de Vitotel</button>
+  <div class="panel">
+<img src="images/ExtVitotel (1).jpg"/>
+<img src="images/ExtVitotel (2).jpg"/>
+<img src="images/ExtVitotel (3).jpg"/>
+<img src="images/ExtVitotel (4).jpg"/>
+<img src="images/ExtVitotel (5).jpg"/>
+<img src="images/ExtVitotel (6).jpg"/>
+<img src="images/ExtVitotel (7).jpg"/>
+<img src="images/ExtVitotel (8).JPG"/>
+<img src="images/ExtVitotel (9).JPG"/>
+<img src="images/ExtVitotel (10).JPG"/>
+<img src="images/ExtVitotel (11).JPG"/>
+<img src="images/ExtVitotel (12).JPG"/>
+<img src="images/ExtVitotel (13).JPG"/>
+  </div>
 
-  
-      </p>
+  <button class="accordion">Sortie</button>
+  <div class="panel">
+<img src="images/Sortie (1).JPG"/>
+<img src="images/Sortie (2).JPG"/>
+<img src="images/Sortie (3).jpg"/>
+<img src="images/Sortie (4).jpg"/>
+<img src="images/Sortie (5).jpg"/>
+<img src="images/Sortie (6).jpg"/>
+<img src="images/Sortie (7).jpg"/>
+<img src="images/Sortie (8).jpg"/>
+  </div>
     </section>
-
     <footer>
         <h3>Les Amis De Vitotel © COPYRIGHT 2021</h3>
         <p>
@@ -38,5 +93,21 @@
         </p>
         <h3>Tout droits réservés</h4>
     </footer>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "%";
+    } 
+  });
+}
+      </script>
   </body>
 </html>

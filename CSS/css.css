@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap");
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
 body {
   margin: 0;
   background-color: #fcf5ee;
@@ -28,7 +32,33 @@ nav a {
 nav a:hover {
   color: black;
 }
-
+#menu-deroulant:after {
+  cursor: pointer;
+  font-size: 20px;
+  content: "▼";
+  padding: 8px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-child {
+  display: none;
+  background-color: #fce6d1;
+  width: 100%;
+  position: absolute;
+  height: absolute;
+  z-index: 1;
+}
+.dropdown-child a {
+  color: #605758;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover .dropdown-child {
+  display: block;
+}
 /* Accueil (Actualités) */
 .actu {
   display: block;
@@ -58,7 +88,7 @@ nav a:hover {
   background-color: #ededed;
   background-image: url("../images/diaporama.png");
   background-size: contain;
-  animation: defilement1 12s linear infinite;
+  animation: defilement1 20s linear infinite;
 }
 @keyframes defilement1 {
   0% {
@@ -104,6 +134,107 @@ nav a:hover {
   text-align: center;
 }
 
+#histoire p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+#histoire_date {
+  margin-left: 25px;
+  font-size: 19px;
+}
+/* Cloche */
+#cloche h1,
+h4,
+.par {
+  text-align: center;
+}
+#cloche p {
+  text-indent: 35.4pt;
+}
+/* Poeme */
+#poeme h1 {
+  text-align: center;
+}
+/* Photos */
+#photo {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.accordion {
+  background-color: #fad7b7;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  font-size: 100%;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+}
+
+.active,
+.accordion:hover {
+  background-color: hsla(0, 0%, 0%, 0.92);
+  color: white;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: gray;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+.panel img {
+  width: 50%;
+}
+/* Pélérinage */
+#pelerinage h1 {
+  color: red;
+  text-align: center;
+}
+#pelerinage h2 {
+  text-align: center;
+}
+#pelerinage p {
+  text-indent: 35.4pt;
+}
+
+/* Adhésion */
+.adhesion {
+  text-align: center;
+}
+.lien_adhesion {
+  display: block;
+  margin: 20px auto;
+  text-decoration: none;
+  color: black;
+  padding: 15px;
+  background-color: #fce6d1;
+  width: 150px;
+  font-size: 125%;
+}
+.lien_adhesion:hover {
+  background-color: #605758;
+  color: white;
+  transition: 2s all;
+}
 /* Footer (Bas-De-Page) */
 footer {
   background-color: #fad7b7;
