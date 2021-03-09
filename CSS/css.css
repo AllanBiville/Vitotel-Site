@@ -165,6 +165,69 @@ h4,
 #poeme h1 {
   text-align: center;
 }
+/* La cure */
+
+#cure h1 {
+  color: red;
+  text-align: center;
+}
+/* Querelles */
+#querelle h1 {
+  text-align: center;
+}
+
+/* Vie communale  */
+#viecom h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#viecom h4 {
+  text-align: center;
+}
+
+#viecom h5 {
+  text-align: center;
+  color: orange;
+  font-size: 15px;
+}
+
+#viecom_date a:visited {
+  color: green;
+}
+
+#viecom_date a:hover {
+  color: burlywood;
+}
+
+#viecom_date h5 {
+  text-align: center;
+  color: orange;
+  font-size: 15px;
+}
+
+#viecom p {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+#viecom_date {
+  margin-left: 25px;
+  font-size: 19px;
+}
+
+/* Descriptif Hotel 1913 */
+#descriptif1 h1,
+p.par,
+h3 {
+  text-align: center;
+}
+
+/* Descriptif Hotel 1962 */
+#eglise h1 {
+  text-align: center;
+}
+
 /* Photos */
 #photo {
   text-align: center;
@@ -214,57 +277,6 @@ h4,
   margin: 0 15px;
   width: 50%;
 }
-.container {
-  margin: 0 auto;
-  width: 60%;
-  height: 400px;
-  position: relative;
-  overflow: hidden;
-}
-.slides {
-  display: flex;
-  height: 100%;
-}
-.slide {
-  min-width: 100%;
-  position: relative;
-}
-.slide img {
-  width: 100%;
-  height: 100%;
-}
-.slide-controls {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#next-btn,
-#prev-btn {
-  cursor: pointer;
-  background: transparent;
-  font-size: 30px;
-  border: none;
-  padding: 10px;
-  color: white;
-}
-#next-btn:focus,
-#prev-btn:focus {
-  outline: none;
-}
-.slide-content {
-  position: absolute;
-  top: 50%;
-  left: 50px;
-  transform: translateY(-50%);
-  font-size: 60px;
-  color: white;
-}
-
 /* Pélérinage */
 #pelerinage h1 {
   color: red;
