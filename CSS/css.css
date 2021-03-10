@@ -9,6 +9,9 @@ body {
   margin: 0;
   background-color: #fcf5ee;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* Header / Navigation / Menu */
 .logo_background {
   width: 100%;
@@ -342,4 +345,11 @@ footer {
   margin-bottom: -20px;
   padding: 10px 0;
   text-align: center;
+}
+
+.fas {
+  font-size: 25px;
+  margin: 20px;
+  color: #605758;
+  height: 30px;
 }
