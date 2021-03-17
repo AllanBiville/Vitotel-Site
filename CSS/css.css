@@ -24,14 +24,8 @@ html {
   display: block;
   height: 350px;
   background: no-repeat url("../images/fond.jpg");
-
   background-size: 100% 100%;
   filter: blur(8px);
-}
-.logo {
-  margin: 0 auto;
-  display: block;
-  height: 350px;
 }
 .text {
   font-family: "Great Vibes", cursive;
@@ -68,6 +62,9 @@ nav a {
 }
 nav a:hover {
   color: black;
+}
+.menu-active{
+  background-color: white;
 }
 .sticky {
   position: fixed;
