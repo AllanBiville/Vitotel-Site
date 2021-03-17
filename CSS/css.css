@@ -1,8 +1,11 @@
 /* Importation Police d'Ecriture */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Parisienne&display=swap");
 /* CSS de base */
-* {
+section,
+footer,
+nav {
   font-family: "Source Sans Pro", sans-serif;
 }
 body {
@@ -12,21 +15,48 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.A {
+  font-family: "Berkshire Swash", cursive;
+  font-family: "Parisienne", cursive;
+}
 /* Header / Navigation / Menu */
 .logo_background {
-  width: 100%;
+  display: block;
   height: 350px;
-  background-color: #fad7b7;
+  background: no-repeat url("../images/fond.jpg");
+
+  background-size: 100% 100%;
+  filter: blur(8px);
 }
 .logo {
   margin: 0 auto;
   display: block;
   height: 350px;
 }
+.text {
+  font-family: "Great Vibes", cursive;
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  z-index: 2;
+  font-size: 500%;
+}
+.text a {
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
 nav {
   width: 100%;
   background-color: #fce6d1;
   text-align: center;
+  height: 71px;
+  position: sticky;
 }
 nav a {
   padding: 20px 10px;
@@ -38,6 +68,12 @@ nav a {
 }
 nav a:hover {
   color: black;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 #menu-deroulant:after {
   cursor: pointer;
@@ -59,12 +95,49 @@ nav a:hover {
 }
 .dropdown-child a {
   color: #605758;
-  padding: 20px;
+  padding: 8px;
   text-decoration: none;
   display: block;
 }
 .dropdown:hover .dropdown-child {
   display: block;
+}
+.nav_class .icon {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .nav_class a {
+    display: none;
+  }
+  .nav_class a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav_class.responsive {
+    position: absolute;
+    z-index: 1;
+    background-color: #fce6d1;
+    height: 440px;
+  }
+  .dropdown {
+    border: 4px solid #fad7b7;
+  }
+  .dropdown-child {
+    border: 4px solid #fad7b7;
+  }
+
+  .nav_class.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav_class.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
 }
 /* Accueil (Actualités) */
 .actu {
@@ -163,7 +236,9 @@ h4,
   text-align: center;
 }
 #cloche p {
-  text-indent: 35.4pt;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 17px;
 }
 /* Poeme */
 #poeme h1 {
@@ -175,9 +250,20 @@ h4,
   color: red;
   text-align: center;
 }
+
+#cure ul {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 17px;
+}
 /* Querelles */
 #querelle h1 {
   text-align: center;
+}
+p {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 17px;
 }
 
 /* Vie communale  */
@@ -225,6 +311,12 @@ h4,
 p.par,
 h3 {
   text-align: center;
+}
+
+p {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 17px;
 }
 
 /* Descriptif Hotel 1962 */
@@ -291,6 +383,9 @@ h3 {
 }
 #pelerinage p {
   text-indent: 35.4pt;
+  font-size: 17px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 /* Adhésion */
@@ -318,12 +413,14 @@ h3 {
 .contactform {
   font-family: "Sansita Swashed", cursive;
   text-align: center;
-  background-color: #fce6d1;
+  background-color: #fcf5ee;
 }
 label {
   border: 1px solid black;
   text-align: center;
-  padding: 5px;
+  display: block;
+  width: 100px;
+  margin: 0 auto -30px;
 }
 form hr {
   height: 2px;
@@ -338,7 +435,10 @@ form hr {
   padding: 6px 0 6px 0;
   text-align: center;
 }
-
+iframe {
+  margin: 0 auto 10px;
+  display: block;
+}
 /* Footer (Bas-De-Page) */
 footer {
   background-color: #fad7b7;
