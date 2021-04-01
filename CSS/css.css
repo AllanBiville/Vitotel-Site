@@ -63,7 +63,7 @@ nav a {
 nav a:hover {
   color: black;
 }
-.menu-active{
+.menu-active {
   background-color: white;
 }
 .sticky {
@@ -436,10 +436,18 @@ iframe {
   margin: 0 auto 10px;
   display: block;
 }
-/* Plan du site */
+/* Plan du site & Mentions Légales */
 
-.plan-du-site{
-  margin-left:50px;
+.plan-du-site {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.mentions-legales {
+  text-align: center;
+  padding: 10px 20px;
+}
+.plan-du-site h1 {
+  text-align: center;
 }
 /* Footer (Bas-De-Page) */
 footer {
