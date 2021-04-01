@@ -436,6 +436,11 @@ iframe {
   margin: 0 auto 10px;
   display: block;
 }
+/* Plan du site */
+
+.plan-du-site{
+  margin-left:50px;
+}
 /* Footer (Bas-De-Page) */
 footer {
   background-color: #fad7b7;
